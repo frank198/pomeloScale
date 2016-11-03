@@ -1,0 +1,28 @@
+{
+  "name": "pomeloScale",
+  "version": "1.0.0",
+  "description": "自动扩展服务器。原址：https://github.com/NetEase/pomelo-scale-plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frank198/pomeloScale.git"
+  },
+  "keywords": [
+    "pomelo",
+    "pomelo-scale"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frank198/pomeloScale/issues"
+  },
+  "homepage": "https://github.com/frank198/pomeloScale#readme",
+
+  "dependencies": {
+    "async": "0.6.2",
+    "pomelo-logger": "0.1.2"
+  }
+}
