@@ -1,6 +1,6 @@
 {
   "name": "pomeloScale",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "自动扩展服务器。原址：https://github.com/NetEase/pomelo-scale-plugin",
   "main": "index.js",
   "scripts": {
@@ -20,15 +20,12 @@
     "url": "https://github.com/frank198/pomeloScale/issues"
   },
   "homepage": "https://github.com/frank198/pomeloScale#readme",
-
   "dependencies": {
-    "async": "0.6.2",
-    "pomelo-logger": "0.1.2"
+    "async": "^2.5.0",
+    "pomelo-logger": "^0.1.2"
   },
-
-  "devDependencies":
-  {
-    "eslint":"*",
+  "devDependencies": {
+    "eslint": "*",
     "mocha": ">=0.0.1",
     "should": ">=0.0.1"
   }
