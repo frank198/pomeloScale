@@ -1,6 +1,6 @@
 {
   "name": "pomeloScale",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "自动扩展服务器。原址：https://github.com/NetEase/pomelo-scale-plugin",
   "main": "index.js",
   "scripts": {
