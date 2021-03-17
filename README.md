@@ -14,18 +14,30 @@
     "interval": 50000, # 间隔时间
     "increasement": 2, # 每次增加的服务器个数
     "servers": [ # 可以扩展的服务器列表
-      {
-        "id": "connector2",
-        "host": "127.0.0.1",
-        "port": "3152",
-        "clientHost": "192.168.31.140",
-        "clientPort": "3012",
-        "max-connections": 300,
-        "frontend": true,
-        "args": [
-          "--harmony"
-        ]
-      }
+          {
+                "id": "connector2",
+                "host": "127.0.0.1",
+                "port": "3152",
+                "clientHost": "192.168.31.140",
+                "clientPort": "3012",
+                "max-connections": 300,
+                "frontend": true,
+                "args": [
+                  "--harmony"
+                ]
+          },
+          {
+                "clusterCount": "10", // 批量添加扩展服务器
+                "host": "127.0.0.1",
+                "port": "3152++",
+                "clientHost": "192.168.31.140",
+                "clientPort": "3012++",
+                "max-connections": 300,
+                "frontend": true,
+                "args": [
+                  "--harmony"
+                ]
+          }
     ]
   },
   "player": {
@@ -33,21 +45,20 @@
     "scaleCondition": 2,
     "increasement": 2,
     "otherClass":"PlayerScale.js", # 自定义条件脚本
-  "servers":
-  [
-      {
-        "id": "player10",
-        "host": "127.0.0.1",
-        "port": "2222",
-        "frontend": "false",
-        "area": 12,
-        "clientPort": "",
-        "clientHost": "",
-        "max-connections": null,
-        "args": [
-          ""
-        ]
-      }
+    "servers":
+    [
+          {
+                "id": "player10",
+                "host": "127.0.0.1",
+                "port": "2222",
+                "area": 12,
+                "clientPort": "",
+                "clientHost": "",
+                "max-connections": null,
+                "args": [
+                  ""
+                ]
+          }
     ]
 }
 }
